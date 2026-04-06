@@ -1,0 +1,31 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Datos raw (NO versionar — reproducible via notebooks)
+data/raw/
+data/bronze/
+data/silver/
+data/gold/
+
+# Archivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# DuckDB persistente
+*.duckdb
+
+# NOTA: artifacts/ SI se versiona (evidencia del pipeline)
+!artifacts/
