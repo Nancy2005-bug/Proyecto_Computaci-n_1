@@ -1,16 +1,14 @@
-# 🌟 Stellar Population Pipeline
+# Stellar Population Pipeline
 ### Física Computacional 1 — Ingeniería de Datos | Proyecto W05
 
-Pipeline reproducible de ingeniería de datos sobre el catálogo NASA Exoplanet Archive (PSCompPars),
-enfocado en **análisis de población estelar y Diagrama de Hertzsprung-Russell**.
+Pipeline reproducible de ingeniería de datos sobre el catálogo NASA Exoplanet Archive (PSCompPars), enfocado en análisis de población estelar y Diagrama de Hertzsprung-Russell.
 
 > **Pregunta científica:**  
-> *¿Cómo varía la arquitectura de los sistemas planetarios (tamaño, período orbital, zona habitable)  
-> según la clase espectral de la estrella anfitriona?*
+> *¿Cómo varía la arquitectura de los sistemas planetarios (tamaño, período orbital, zona habitable) según la clase espectral de la estrella anfitriona?*
 
 ---
 
-## 🗂️ Estructura del repositorio
+## Estructura del repositorio
 
 ```
 stellar-pipeline/
@@ -41,7 +39,7 @@ stellar-pipeline/
 
 ---
 
-## ⚡ Quickstart (VS Code)
+## Quickstart (VS Code)
 
 ```bash
 # 1. Clonar y entrar al repositorio
@@ -60,7 +58,7 @@ pip install -r requirements.txt
 # 4. Abrir VS Code
 code .
 
-# 5. Ejecutar notebooks en orden (Ctrl+Shift+P → "Select Kernel" → .venv)
+# 5. Ejecutar notebooks en orden (Ctrl+Shift+P -> "Select Kernel" -> .venv)
 # notebooks/00_raw_ingestion.ipynb  → descarga datos
 # notebooks/01_bronze_lite.ipynb    → Bronze
 # notebooks/02_silver_cleaning.ipynb → Silver
@@ -70,7 +68,7 @@ code .
 
 ---
 
-## 🔬 Pipeline: Raw → Bronze → Silver → Gold
+## Pipeline: Raw → Bronze → Silver → Gold
 
 ```
 NASA TAP API
@@ -97,7 +95,7 @@ NASA TAP API
 
 ---
 
-## 🏛️ Tres Pilares
+## Tres Pilares
 
 | Pilar | Implementación |
 |---|---|
@@ -107,7 +105,7 @@ NASA TAP API
 
 ---
 
-## 📊 Columnas seleccionadas (enfoque estelar — distinto al del profesor)
+## Columnas seleccionadas (enfoque estelar)
 
 | Grupo | Columnas |
 |---|---|
@@ -118,7 +116,7 @@ NASA TAP API
 
 ---
 
-## 📋 Data Contract (resumen)
+## Data Contract (resumen)
 
 - `dim_host_sk`: 1 fila por `hostname` | PK: `host_id` (surrogate), UNIQUE: `hostname`
 - `fact_planet_sk`: 1 fila por `pl_name` | PK: `pl_name`, FK: `host_id → dim_host_sk.host_id`
@@ -128,7 +126,7 @@ Ver [`docs/data_contract.md`](docs/data_contract.md) y [`docs/decisions_log.md`]
 
 ---
 
-## 🛠️ Stack tecnológico
+## Stack tecnológico
 
 | Herramienta | Versión | Uso |
 |---|---|---|
@@ -141,6 +139,7 @@ Ver [`docs/data_contract.md`](docs/data_contract.md) y [`docs/decisions_log.md`]
 
 ---
 
-## 👤 Autor
+## Autores
 Curso: Física Computacional 1 — Ingeniería de Datos Fundamentos  
 Docente: Ph.D. Santiago Echeverri Arteaga
+Estudiantes: Daniel Felipe Arroyave Gutiérrez y Nancy Camacho Santos 
